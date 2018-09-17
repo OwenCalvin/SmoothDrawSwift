@@ -6,9 +6,19 @@
 //  Copyright © 2018 daven. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var CreateButton: UIButton!
+    @IBOutlet weak var textUsername: UITextField!
+    @IBOutlet weak var textPassword: UITextField!
+    
+    private let app = App(url: "http://192.168.0.220:4000/app")
+    
+    @IBAction func CreateButtonClick() {
+        app.createRoom(username: textUsername.text!, password: textPassword.text!)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +29,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-

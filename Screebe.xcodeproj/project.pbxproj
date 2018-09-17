@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2422ED17A6C4D8402AA29AF7 /* Pods_Screebe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2B4991120D5E1C6DD3E21D /* Pods_Screebe.framework */; };
+		5A1CE893214D3A3C009930C5 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CE892214D3A3C009930C5 /* IO.swift */; };
+		5A1CE895214D3BC9009930C5 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CE894214D3BC9009930C5 /* Form.swift */; };
+		5A2D18EA214D36ED00B65EE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D18E9214D36ED00B65EE1 /* App.swift */; };
+		5A696914214F470F00A3F4A6 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A696913214F470F00A3F4A6 /* Vector.swift */; };
+		5A771D42214D700C005C2C27 /* SessionInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771D41214D700C005C2C27 /* SessionInstance.swift */; };
+		5A771D44214DA2EE005C2C27 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771D43214DA2EE005C2C27 /* Draw.swift */; };
+		5A771D47214DAF07005C2C27 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771D46214DAF07005C2C27 /* Point.swift */; };
+		5A771D49214DE9D2005C2C27 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771D48214DE9D2005C2C27 /* Flow.swift */; };
 		5A9F7C1A214D362600FF76B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F7C19214D362600FF76B8 /* AppDelegate.swift */; };
 		5A9F7C1C214D362600FF76B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F7C1B214D362600FF76B8 /* ViewController.swift */; };
 		5A9F7C1F214D362600FF76B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F7C1D214D362600FF76B8 /* Main.storyboard */; };
@@ -15,6 +24,8 @@
 		5A9F7C27214D362700FF76B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F7C25214D362700FF76B8 /* LaunchScreen.storyboard */; };
 		5A9F7C32214D362700FF76B8 /* ScreebeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F7C31214D362700FF76B8 /* ScreebeTests.swift */; };
 		5A9F7C3D214D362700FF76B8 /* ScreebeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F7C3C214D362700FF76B8 /* ScreebeUITests.swift */; };
+		C7FC4C58F6B6C2E458EFCD81 /* Pods_ScreebeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B41D9F9CAC4D6435B69B721 /* Pods_ScreebeUITests.framework */; };
+		E04E4A77814737282B60E91A /* Pods_ScreebeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16990A451D38A8889AC826F4 /* Pods_ScreebeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11EC0C9539A9DA9136762A3D /* Pods-Screebe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screebe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Screebe/Pods-Screebe.debug.xcconfig"; sourceTree = "<group>"; };
+		16990A451D38A8889AC826F4 /* Pods_ScreebeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreebeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29EE34613CB1FF49A0DEFE4C /* Pods-ScreebeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreebeUITests/Pods-ScreebeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A1CE892214D3A3C009930C5 /* IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
+		5A1CE894214D3BC9009930C5 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		5A2D18E9214D36ED00B65EE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		5A696913214F470F00A3F4A6 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		5A771D41214D700C005C2C27 /* SessionInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInstance.swift; sourceTree = "<group>"; };
+		5A771D43214DA2EE005C2C27 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		5A771D46214DAF07005C2C27 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		5A771D48214DE9D2005C2C27 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		5A9F7C16214D362600FF76B8 /* Screebe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screebe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9F7C19214D362600FF76B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A9F7C1B214D362600FF76B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +71,12 @@
 		5A9F7C38214D362700FF76B8 /* ScreebeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreebeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9F7C3C214D362700FF76B8 /* ScreebeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreebeUITests.swift; sourceTree = "<group>"; };
 		5A9F7C3E214D362700FF76B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B41D9F9CAC4D6435B69B721 /* Pods_ScreebeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreebeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71AA5B1FE23B2FD9B8F67C5F /* Pods-ScreebeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreebeUITests/Pods-ScreebeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		80310F6CFE1DB31B08DEEDD5 /* Pods-Screebe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screebe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Screebe/Pods-Screebe.release.xcconfig"; sourceTree = "<group>"; };
+		ADFDFC7AE8D0CDFDF0B538A0 /* Pods-ScreebeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreebeTests/Pods-ScreebeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF2B4991120D5E1C6DD3E21D /* Pods_Screebe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Screebe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA5103F8B576F6A17FF60DF /* Pods-ScreebeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreebeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreebeTests/Pods-ScreebeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2422ED17A6C4D8402AA29AF7 /* Pods_Screebe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04E4A77814737282B60E91A /* Pods_ScreebeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FC4C58F6B6C2E458EFCD81 /* Pods_ScreebeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A2D18E4214D36AE00B65EE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A2D18E8214D36DD00B65EE1 /* APP */,
+				5A2D18E7214D36D000B65EE1 /* API */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A2D18E5214D36BF00B65EE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A771D41214D700C005C2C27 /* SessionInstance.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A2D18E6214D36C500B65EE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A1CE894214D3BC9009930C5 /* Form.swift */,
+				5A771D43214DA2EE005C2C27 /* Draw.swift */,
+				5A771D48214DE9D2005C2C27 /* Flow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A2D18E7214D36D000B65EE1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5A2D18E8214D36DD00B65EE1 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				5A2D18E9214D36ED00B65EE1 /* App.swift */,
+				5A1CE892214D3A3C009930C5 /* IO.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		5A771D45214DAEF6005C2C27 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5A771D46214DAF07005C2C27 /* Point.swift */,
+				5A696913214F470F00A3F4A6 /* Vector.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		5A9F7C0D214D362600FF76B8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +166,8 @@
 				5A9F7C30214D362700FF76B8 /* ScreebeTests */,
 				5A9F7C3B214D362700FF76B8 /* ScreebeUITests */,
 				5A9F7C17214D362600FF76B8 /* Products */,
+				BE1BAE0A2AE4D6DE2FCD8F19 /* Pods */,
+				82B4F6D0DFD3040B92D25241 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +184,10 @@
 		5A9F7C18214D362600FF76B8 /* Screebe */ = {
 			isa = PBXGroup;
 			children = (
+				5A771D45214DAEF6005C2C27 /* Class */,
+				5A2D18E6214D36C500B65EE1 /* View */,
+				5A2D18E5214D36BF00B65EE1 /* Model */,
+				5A2D18E4214D36AE00B65EE1 /* Controller */,
 				5A9F7C19214D362600FF76B8 /* AppDelegate.swift */,
 				5A9F7C1B214D362600FF76B8 /* ViewController.swift */,
 				5A9F7C1D214D362600FF76B8 /* Main.storyboard */,
@@ -128,6 +217,29 @@
 			path = ScreebeUITests;
 			sourceTree = "<group>";
 		};
+		82B4F6D0DFD3040B92D25241 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF2B4991120D5E1C6DD3E21D /* Pods_Screebe.framework */,
+				16990A451D38A8889AC826F4 /* Pods_ScreebeTests.framework */,
+				5B41D9F9CAC4D6435B69B721 /* Pods_ScreebeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE1BAE0A2AE4D6DE2FCD8F19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11EC0C9539A9DA9136762A3D /* Pods-Screebe.debug.xcconfig */,
+				80310F6CFE1DB31B08DEEDD5 /* Pods-Screebe.release.xcconfig */,
+				FBA5103F8B576F6A17FF60DF /* Pods-ScreebeTests.debug.xcconfig */,
+				ADFDFC7AE8D0CDFDF0B538A0 /* Pods-ScreebeTests.release.xcconfig */,
+				71AA5B1FE23B2FD9B8F67C5F /* Pods-ScreebeUITests.debug.xcconfig */,
+				29EE34613CB1FF49A0DEFE4C /* Pods-ScreebeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9F7C41214D362700FF76B8 /* Build configuration list for PBXNativeTarget "Screebe" */;
 			buildPhases = (
+				58DCBC55D4B847DF316517EA /* [CP] Check Pods Manifest.lock */,
 				5A9F7C12214D362600FF76B8 /* Sources */,
 				5A9F7C13214D362600FF76B8 /* Frameworks */,
 				5A9F7C14214D362600FF76B8 /* Resources */,
+				6192BAF85201655999ACE9DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9F7C44214D362700FF76B8 /* Build configuration list for PBXNativeTarget "ScreebeTests" */;
 			buildPhases = (
+				7AE61CE579A48EDE9DBA62A5 /* [CP] Check Pods Manifest.lock */,
 				5A9F7C29214D362700FF76B8 /* Sources */,
 				5A9F7C2A214D362700FF76B8 /* Frameworks */,
 				5A9F7C2B214D362700FF76B8 /* Resources */,
@@ -170,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9F7C47214D362700FF76B8 /* Build configuration list for PBXNativeTarget "ScreebeUITests" */;
 			buildPhases = (
+				7B0CD97CC3794CE83BD8C947 /* [CP] Check Pods Manifest.lock */,
 				5A9F7C34214D362700FF76B8 /* Sources */,
 				5A9F7C35214D362700FF76B8 /* Frameworks */,
 				5A9F7C36214D362700FF76B8 /* Resources */,
@@ -199,10 +315,12 @@
 					};
 					5A9F7C2C214D362700FF76B8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 5A9F7C15214D362600FF76B8;
 					};
 					5A9F7C37214D362700FF76B8 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 5A9F7C15214D362600FF76B8;
 					};
 				};
@@ -254,14 +372,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58DCBC55D4B847DF316517EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Screebe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6192BAF85201655999ACE9DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Screebe/Pods-Screebe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Screebe/Pods-Screebe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AE61CE579A48EDE9DBA62A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreebeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B0CD97CC3794CE83BD8C947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreebeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A9F7C12214D362600FF76B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A771D42214D700C005C2C27 /* SessionInstance.swift in Sources */,
+				5A696914214F470F00A3F4A6 /* Vector.swift in Sources */,
+				5A771D49214DE9D2005C2C27 /* Flow.swift in Sources */,
 				5A9F7C1C214D362600FF76B8 /* ViewController.swift in Sources */,
+				5A2D18EA214D36ED00B65EE1 /* App.swift in Sources */,
+				5A771D44214DA2EE005C2C27 /* Draw.swift in Sources */,
+				5A771D47214DAF07005C2C27 /* Point.swift in Sources */,
 				5A9F7C22214D362600FF76B8 /* Screebe.xcdatamodeld in Sources */,
+				5A1CE893214D3A3C009930C5 /* IO.swift in Sources */,
 				5A9F7C1A214D362600FF76B8 /* AppDelegate.swift in Sources */,
+				5A1CE895214D3BC9009930C5 /* Form.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +635,7 @@
 		};
 		5A9F7C42214D362700FF76B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EC0C9539A9DA9136762A3D /* Pods-Screebe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,13 +647,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = daven.Screebe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		5A9F7C43214D362700FF76B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80310F6CFE1DB31B08DEEDD5 /* Pods-Screebe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,13 +666,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = daven.Screebe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		5A9F7C45214D362700FF76B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA5103F8B576F6A17FF60DF /* Pods-ScreebeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -481,7 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = daven.ScreebeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Screebe.app/Screebe";
 			};
@@ -489,6 +695,7 @@
 		};
 		5A9F7C46214D362700FF76B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFDFC7AE8D0CDFDF0B538A0 /* Pods-ScreebeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,7 +709,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = daven.ScreebeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Screebe.app/Screebe";
 			};
@@ -510,6 +717,7 @@
 		};
 		5A9F7C48214D362700FF76B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71AA5B1FE23B2FD9B8F67C5F /* Pods-ScreebeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,7 +730,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = daven.ScreebeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Screebe;
 			};
@@ -530,6 +738,7 @@
 		};
 		5A9F7C49214D362700FF76B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29EE34613CB1FF49A0DEFE4C /* Pods-ScreebeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,7 +751,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = daven.ScreebeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Screebe;
 			};
