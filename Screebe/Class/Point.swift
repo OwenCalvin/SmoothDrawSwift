@@ -4,7 +4,6 @@ import UIKit
 class Point {
     var Force: CGFloat!
     var Location: CGPoint
-    var Processed: Bool = false
     
     var x: Int {
         get {
@@ -16,6 +15,11 @@ class Point {
         get {
             return Int(Location.y)
         }
+    }
+
+    init (_ touch: UITouch, _ view: UIView) {
+        Location = touch.location(in: view)
+        Force = touch.force
     }
 
     init (_ point: CGPoint) {

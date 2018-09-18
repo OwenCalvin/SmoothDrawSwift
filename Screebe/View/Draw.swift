@@ -29,7 +29,8 @@ class Draw: UIViewController {
         if currentFlow == nil {
             currentFlow = Flow(frame: CGRect(x: 0, y: 0, width: 500, height: 500), startTouch: touches.first!)
             Flows.append(currentFlow!)
-            self.view.addSubview(currentFlow!)
+            view.addSubview(currentFlow!)
+            currentFlow?.touchesBegan(touches, with: event)
         }
     }
     

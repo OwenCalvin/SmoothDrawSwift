@@ -5,12 +5,12 @@ class Flow : UIView {
     private var estimates: [NSNumber: Point] = [:]
     private var points: [Point] = []
     private var color: UIColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
-    private let lineWidth: CGFloat = 2
-    private var frozen: Bool = false
-    private var processedPoints: [Point] = []
-    private var writingPoints: [Point] = []
-    private let writingBuffer = 40
-    private let layers: [CGContext] = []
+    private let lineWidth: CGFloat = 4
+    private let writingBuffer = 50
+    private var shape = CAShapeLayer()
+    private var path: UIBezierPath = UIBezierPath()
+    private var lastPoint: Point!
+    private var end = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,41 +22,75 @@ class Flow : UIView {
     
     init(frame: CGRect, startTouch: UITouch) {
         super.init(frame: frame)
-        let point = startTouch.location(in: self)
-        points.append(Point(point, startTouch.force))
         backgroundColor = UIColor(white: 0, alpha: 0)
+        self.layer.addSublayer(shape)
+        lastPoint = Point(startTouch, self)
+        points.append(lastPoint)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        end = false
+        lastPoint = Point(touches.first!, self)
     }
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
-        let point = Point(touch.location(in: self), touch.force)
-        if canApply(point) {
-            writingPoints.append(point)
-            /*
-             if (touch.estimatedPropertiesExpectingUpdates.contains(.force)) {
-             estimates[touch.estimationUpdateIndex!] = Point
-             }
-             */
-            setNeedsDisplay()
-        }
+        let point = Point(touch, self)
+        points.append(point)
+        lastPoint = point
+        setNeedsDisplay()
     }
     
     private func canApply(_ point: Point) -> Bool {
-        if (!frozen) {
-            if (writingPoints.count > 0) {
-                return Vector(writingPoints[writingPoints.count - 1], point).norm > 1
-            }
-            return true
-        }
-        return false
+        return Vector(lastPoint, point).norm > 4
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        frozen = true
+        end = true
+        points = []
+        lastPoint = nil
+        setNeedsLayout()
     }
+    
+    override func draw(_ rect: CGRect) {
+        let context = UIGraphicsGetCurrentContext()!
+        if points.count > 0 {
+            context.setLineWidth(lineWidth)
+            context.setLineCap(CGLineCap.round)
+            context.setLineJoin(CGLineJoin.round)
+            for i in 1..<points.count {
+                context.move(to: points[i - 1].Location)
+                context.addLine(to: points[i].Location)
+            }
+        }
+        let subshape = CAShapeLayer()
+        subshape.path = context.path
+        context.strokePath()
+        if points.count > writingBuffer || end {
+            subshape.strokeColor = UIColor.red.cgColor
+            subshape.lineCap = CAShapeLayerLineCap.round
+            subshape.lineJoin = CAShapeLayerLineJoin.round
+            subshape.lineWidth = lineWidth
+            shape.addSublayer(subshape)
+            path.removeAllPoints()
+            points = lastPoint != nil ? [lastPoint] : []
+        }
+    }
+    
+    override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
+        for touch in touches {
+            if !touch.estimatedPropertiesExpectingUpdates.contains(.force) {
+                let index = touch.estimationUpdateIndex!
+                estimates[index]?.Force = touch.force
+                estimates.removeValue(forKey: index)
+                setNeedsDisplay()
+            }
+        }
+    }
+}
 
-    override func draw (_ rect: CGRect) {
-        UIGraphicsBeginImageContext(frame.size)
+    /*
+    /*override*/ func draw1 (_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
         context?.setAllowsAntialiasing(true)
         context?.setShouldAntialias(true)
@@ -151,17 +185,5 @@ class Flow : UIView {
         if (writingPoints.count > writingBuffer) {
             writingPoints = [processedPoints.last!]
         }
-        UIGraphicsEndImageContext()
     }
-    
-    override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
-        for touch in touches {
-            if !touch.estimatedPropertiesExpectingUpdates.contains(.force) {
-                let index = touch.estimationUpdateIndex!
-                estimates[index]?.Force = touch.force
-                estimates.removeValue(forKey: index)
-                setNeedsDisplay()
-            }
-        }
-    }
-}
+ */

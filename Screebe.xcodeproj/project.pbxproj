@@ -11,6 +11,7 @@
 		5A1CE893214D3A3C009930C5 /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CE892214D3A3C009930C5 /* IO.swift */; };
 		5A1CE895214D3BC9009930C5 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1CE894214D3BC9009930C5 /* Form.swift */; };
 		5A2D18EA214D36ED00B65EE1 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D18E9214D36ED00B65EE1 /* App.swift */; };
+		5A3FF50421519DDF00A6E59B /* Draw.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5A3FF50321519DDF00A6E59B /* Draw.metal */; };
 		5A696914214F470F00A3F4A6 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A696913214F470F00A3F4A6 /* Vector.swift */; };
 		5A771D42214D700C005C2C27 /* SessionInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771D41214D700C005C2C27 /* SessionInstance.swift */; };
 		5A771D44214DA2EE005C2C27 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A771D43214DA2EE005C2C27 /* Draw.swift */; };
@@ -52,6 +53,7 @@
 		5A1CE892214D3A3C009930C5 /* IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
 		5A1CE894214D3BC9009930C5 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		5A2D18E9214D36ED00B65EE1 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		5A3FF50321519DDF00A6E59B /* Draw.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Draw.metal; sourceTree = "<group>"; };
 		5A696913214F470F00A3F4A6 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		5A771D41214D700C005C2C27 /* SessionInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInstance.swift; sourceTree = "<group>"; };
 		5A771D43214DA2EE005C2C27 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				5A1CE894214D3BC9009930C5 /* Form.swift */,
 				5A771D43214DA2EE005C2C27 /* Draw.swift */,
 				5A771D48214DE9D2005C2C27 /* Flow.swift */,
+				5A3FF50321519DDF00A6E59B /* Draw.metal */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A771D42214D700C005C2C27 /* SessionInstance.swift in Sources */,
+				5A3FF50421519DDF00A6E59B /* Draw.metal in Sources */,
 				5A696914214F470F00A3F4A6 /* Vector.swift in Sources */,
 				5A771D49214DE9D2005C2C27 /* Flow.swift in Sources */,
 				5A9F7C1C214D362600FF76B8 /* ViewController.swift in Sources */,
