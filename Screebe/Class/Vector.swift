@@ -5,21 +5,21 @@ class Vector {
     var StartPoint: Point
     var EndPoint: Point
 
-    var cx: Double {
+    var CX: Double {
         get {
             return Double(StartPoint.x - EndPoint.x)
         }
     }
     
-    var cy: Double {
+    var CY: Double {
         get {
             return Double(StartPoint.y - EndPoint.y)
         }
     }
     
-    var norm: Double {
+    var Norm: Double {
         get {
-            return sqrt(pow(cx, 2) + pow(cy, 2))
+            return sqrt(pow(CX, 2) + pow(CX, 2))
         }
     }
     
@@ -34,10 +34,10 @@ class Vector {
     }
     
     static func angle(_ v1: Vector, _ v2: Vector) -> Double {
-        return acos(Vector.scalarProduct(v1, v2) / (v1.norm * v2.norm))
+        return acos(Vector.scalarProduct(v1, v2) / (v1.Norm * v2.Norm))
     }
     
     static func scalarProduct(_ v1: Vector, _ v2: Vector) -> Double {
-        return v1.cx * v2.cx + v1.cy * v2.cy
+        return v1.CX * v2.CX + v1.CY * v2.CY
     }
 }
