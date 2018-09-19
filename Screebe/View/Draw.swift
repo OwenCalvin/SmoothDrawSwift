@@ -27,7 +27,7 @@ class Draw: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if currentFlow == nil {
-            currentFlow = Flow(frame: CGRect(x: 0, y: 0, width: 500, height: 500), startTouch: touches.first!)
+            currentFlow = Flow(frame: view.frame, startTouch: touches.first!)
             Flows.append(currentFlow!)
             view.addSubview(currentFlow!)
             currentFlow?.touchesBegan(touches, with: event)
